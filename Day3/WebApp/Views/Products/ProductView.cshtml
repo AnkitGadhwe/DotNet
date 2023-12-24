@@ -1,0 +1,14 @@
+@using ProductContainer;
+@{
+    ViewData["Title"] = "Product Page";
+}
+@{
+  Product pro = ViewData["Prod"] as Product;
+
+}
+<div class="text-center">
+    <h1 class="display-4">@pro.id</h1>
+    <h1 class="display-4">@pro.name</h1>
+     <img src="@pro.ImageUrl" alt="error"/>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
